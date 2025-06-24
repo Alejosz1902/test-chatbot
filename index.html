@@ -95,14 +95,29 @@
     </section>
 
     <!--Chatbot-->
-    <div class="chatbot-container">
-      <div class="chatbot-header">Chat with Bonz</div>
-      <iframe
-        class="chatbot-frame"
-        src="https://unified-guppy-wise.ngrok-free.app/webhook/02067220-0ccf-49ae-8365-5aabc646d0d8/chat"
-        allow="microphone; camera"
-      ></iframe>
-    </div>
+    <!-- Widget Configuration --> 
+     <script>     
+     window.ChatWidgetConfig = {         
+      webhook: {             
+        url: 'https://unified-guppy-wise.ngrok-free.app/webhook/02067220-0ccf-49ae-8365-5aabc646d0d8/chat',             
+        route: 'general'         
+      },         
+      branding: {             
+        logo: 'INSERT_LOGO_URL',             
+        name: 'Bonchi',             
+        welcomeText: 'Get instant answers to your questions!',              
+        responseTimeText: 'Click the button below to start chatting'         
+      },         
+      style: {             
+        primaryColor: '#10b981',             
+        secondaryColor: '#059669',             
+        position: 'right',             
+        backgroundColor: '#ffffff',             
+        fontColor: '#1f2937'         },                  
+      }; 
+      </script>  
+      <script src="https://cdn.jsdelivr.net/gh/funtastic418/chat-widget@main/cha t-widget.js"> </script> 
+  
 
     <!--Features Section-->
     <section id="features" class="pt-12 bg-gray-50 dark:bg-darlBlue1">
